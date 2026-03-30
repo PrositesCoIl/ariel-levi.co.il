@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>אריאל לוי אספקת חמרה וחומרי תשתית לקבלנים ולפרטיים</title>
+  <meta name="description" content="אריאל לוי מספק חמרה, חול מחצבה, סומסום, חלוקי נחל וחומרי תשתית נוספים עם הובלות, פול טריילר, עבודות טרקטור כף ומחפרון לקבלנים, גננים ולקוחות פרטיים." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#6f3b16" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="אריאל לוי אספקת חמרה וחומרי תשתית לקבלנים ולפרטיים" />
+  <meta property="og:description" content="אספקת חמרה, חול מחצבה, סומסום, חלוקי נחל, עבודות טרקטור והובלות פול טריילר עם התאמה לקבלנים, גננים ולקוחות פרטיים." />
+  <meta property="og:locale" content="he_IL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f3ed;
+      --surface: #ffffff;
+      --surface-strong: #f3ece3;
+      --text: #1f1a17;
+      --muted: #5b5149;
+      --brand: #7b3f18;
+      --brand-deep: #572b10;
+      --brand-soft: #d6b28f;
+      --accent: #2e5f52;
+      --border: #d8c8b7;
+      --shadow: 0 12px 36px rgba(39, 26, 17, 0.09);
+      --radius: 22px;
+      --max: 1200px;
+      --header-h: 88px;
+      --focus: #0d63b8;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Heebo', Arial, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(214,178,143,.22), transparent 24%),
+        linear-gradient(180deg, #f8f4ef 0%, #f5f0e8 100%);
+      color: var(--text);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    a {
+      color: var(--brand-deep);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover { color: var(--brand); }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+
+    img { max-width: 100%; display: block; }
+    .skip-link {
+      position: absolute;
+      right: 16px;
+      top: -60px;
+      background: #fff;
+      color: #000;
+      padding: 12px 16px;
+      z-index: 9999;
+      box-shadow: var(--shadow);
+    }
+    .skip-link:focus { top: 12px; }
+
+    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      background: rgba(247, 243, 237, 0.93);
+      border-bottom: 1px solid rgba(123,63,24,.14);
+    }
+
+    .header-inner {
+      min-height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand strong {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 12px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .main-nav a:hover,
+    .main-nav a[aria-current="page"] {
+      background: rgba(123,63,24,.08);
+      color: var(--brand-deep);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn,
+    .phone-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 12px 18px;
+      min-height: 48px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+      box-shadow: 0 8px 24px rgba(87,43,16,.10);
+    }
+
+    .btn:hover,
+    .phone-pill:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-deep) 100%);
+      color: #fff;
+    }
+
+    .btn-secondary,
+    .phone-pill {
+      background: #fff;
+      color: var(--brand-deep);
+      border: 1px solid rgba(123,63,24,.18);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: #fff;
+      border: 1px solid rgba(123,63,24,.2);
+      color: var(--brand-deep);
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+
+    main { overflow: clip; }
+
+    .hero {
+      padding: 48px 0 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .95fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-card,
+    .card,
+    .service-card,
+    .gallery-card,
+    .cta-panel,
+    .footer-panel {
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(123,63,24,.13);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .hero-copy {
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      inset: auto auto -80px -80px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(123,63,24,.10), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(46,95,82,.09);
+      color: #22483e;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 16px;
+      line-height: 1.25;
+      color: #1d1612;
+    }
+
+    h1 { font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 800; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 800; }
+    h3 { font-size: clamp(1.25rem, 2.2vw, 1.55rem); font-weight: 700; }
+
+    p, li, dt, dd, blockquote, small, .meta, .stat-value, .stat-label { font-size: 18px; }
+    p { margin: 0 0 18px; color: var(--text); }
+    .lead { font-size: 1.12rem; color: #2c241f; }
+    .muted { color: var(--muted); }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 26px 0 22px;
+    }
+
+    .mini-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .mini-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      background: rgba(123,63,24,.05);
+      border-radius: 16px;
+      border: 1px solid rgba(123,63,24,.10);
+    }
+
+    .mini-item strong { display: block; font-size: 1rem; }
+
+    .hero-card {
+      padding: 18px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-card figure {
+      margin: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      min-height: 100%;
+      border: 1px solid rgba(123,63,24,.1);
+      background: #efe5d7;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .card,
+    .service-card,
+    .gallery-card,
+    .cta-panel,
+    .footer-panel { padding: 26px; }
+
+    .stat-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--brand-deep);
+      line-height: 1.2;
+    }
+
+    .stat-label { color: var(--muted); }
+
+    section { padding: 30px 0; scroll-margin-top: calc(var(--header-h) + 18px); }
+
+    .section-head {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 22px;
+      max-width: 900px;
+    }
+
+    .cards-3,
+    .cards-4,
+    .materials-grid,
+    .work-grid,
+    .gallery-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cards-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .materials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gallery-grid { grid-template-columns: 1.1fr .9fr; align-items: stretch; }
+
+    .service-card,
+    .gallery-card { position: relative; overflow: hidden; }
+    .service-card::after,
+    .gallery-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -50px auto;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(123,63,24,.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    .service-card h3,
+    .gallery-card h3 { margin-bottom: 12px; }
+
+    .service-card ul,
+    .gallery-card ul {
+      margin: 0;
+      padding-right: 22px;
+    }
+
+    .service-card li,
+    .gallery-card li { margin-bottom: 10px; }
+
+    .image-frame {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(123,63,24,.12);
+      background: #efe5d7;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.3);
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .image-frame:hover img { transform: scale(1.03); }
+
+    .content-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .band {
+      background: linear-gradient(180deg, rgba(123,63,24,.06), rgba(123,63,24,.02));
+      border-top: 1px solid rgba(123,63,24,.08);
+      border-bottom: 1px solid rgba(123,63,24,.08);
+    }
+
+    .cta-panel {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .cta-box {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(123,63,24,.05);
+      border: 1px solid rgba(123,63,24,.1);
+    }
+
+    .footer-panel {
+      display: grid;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .footer-links,
+    .fine-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-note,
+    .access-note {
+      color: var(--muted);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .gallery-grid,
+      .cta-panel,
+      .content-split,
+      .cards-3,
+      .cards-4,
+      .materials-grid,
+      .work-grid,
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+      .cards-4 { grid-template-columns: 1fr 1fr; }
+      .hero-card img { min-height: 340px; }
+    }
+
+    @media (max-width: 820px) {
+      :root { --header-h: 78px; }
+      .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+      .nav-wrap {
+        position: absolute;
+        right: 16px;
+        left: 16px;
+        top: calc(100% + 8px);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px;
+        background: rgba(255,255,255,.98);
+        border: 1px solid rgba(123,63,24,.14);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+      }
+      .nav-wrap.open { display: flex; }
+      .main-nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+      .main-nav a { display: block; }
+      .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .phone-pill,
+      .btn { width: 100%; }
+      .hero-grid,
+      .gallery-grid,
+      .cta-panel,
+      .content-split,
+      .cards-3,
+      .cards-4,
+      .materials-grid,
+      .work-grid,
+      .stats,
+      .footer-top,
+      .mini-list {
+        grid-template-columns: 1fr;
+      }
+      .header-inner { gap: 10px; }
+      .brand strong { font-size: 1.12rem; }
+      .brand span { font-size: 0.98rem; }
+      .hero-copy,
+      .hero-card,
+      .card,
+      .service-card,
+      .gallery-card,
+      .cta-panel,
+      .footer-panel { padding: 20px; }
+      .hero-card img { min-height: 280px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" title="דלג לתוכן המרכזי">דלג לתוכן המרכזי</a>
+
+  <header class="site-header" aria-label="אזור עליון">
+    <div class="container header-inner">
+      <a class="brand" href="#top" title="חזרה לראש הדף - אריאל לוי">
+        <strong>אריאל לוי</strong>
+        <span>אספקת חמרה, חומרי תשתית, עבודות והובלות</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="פתח תפריט ניווט">
+        ☰
+      </button>
+
+      <div class="nav-wrap" id="main-navigation">
+        <nav class="main-nav" aria-label="תפריט ראשי">
+          <ul>
+            <li><a href="#materials" title="מעבר לחלק החומרים">חומרים</a></li>
+            <li><a href="#works" title="מעבר לחלק העבודות וההובלות">עבודות והובלות</a></li>
+            <li><a href="#audiences" title="מעבר לחלק למי השירות מתאים">למי זה מתאים</a></li>
+            <li><a href="#about" title="מעבר לחלק על אריאל לוי">על אריאל לוי</a></li>
+            <li><a href="#contact" title="מעבר לחלק יצירת קשר">יצירת קשר</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="phone-pill" href="tel:0535359575" title="חיוג לאריאל לוי 053-535-9575">053-535-9575</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">פתרונות חומר, הובלה וביצוע במקום אחד</div>
+          <h1>אספקת חמרה וחומרי תשתית עם התאמה אמיתית לשטח, לכמות ולדרך העבודה</h1>
+          <p class="lead">כאשר פרויקט צריך חומר נכון, זמינות טובה ויכולת להביא אותו בדיוק בצורה המתאימה לשטח, אין מקום לפתרונות חלקיים. אריאל לוי מציע מעטפת שמחברת בין אספקת חמרה וחומרי מחצבה, הובלה בכמה שיטות ועבודות משלימות בשטח, כך שקבלנים, גננים ולקוחות פרטיים מקבלים מענה מסודר, יעיל וברור.</p>
+          <p>ההתמחות המרכזית היא באספקת חמרה, חול מחצבה, חול חמרה, אבני סומסום, חלוקי נחל וחומרי תשתית וחיפוי נוספים, לצד יכולת לטפל גם בפיזור, בעבודות טרקטור כף, בעבודות מחפרון ובהובלות פול טריילר. במקום להתנהל מול כמה גורמים שונים, אפשר לעבוד מול כתובת אחת שמבינה גם חומר, גם לוגיסטיקה וגם את קצב העבודה בשטח.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:0535359575" title="התקשרו עכשיו לאריאל לוי">התקשרו עכשיו</a>
+            <a class="btn btn-secondary" href="https://ariel-levi.co.il/%D7%97%D7%9E%D7%A8%D7%94/" title="מעבר לעמוד חמרה באתר אריאל לוי">חמרה</a>
+          </div>
+
+          <div class="mini-list" aria-label="יתרונות מרכזיים">
+            <div class="mini-item">
+              <div>
+                <strong>כמה צורות אספקה</strong>
+                <span class="muted">שקים, בלות, משאיות ופול טריילר לפי צורך והיקף.</span>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div>
+                <strong>מענה לחומר ולעבודה</strong>
+                <span class="muted">לא רק אספקה, אלא גם שירותי ביצוע והעמסה בשטח.</span>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div>
+                <strong>מתאים לפרויקט ולבית</strong>
+                <span class="muted">קבלנים, גננים, בעלי מקצוע וגם לקוחות פרטיים.</span>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div>
+                <strong>קלאסי, ברור, ישיר</strong>
+                <span class="muted">שירות שמכוון לדיוק, תיאום ותוצאה שעובדת נכון.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="תמונת חמרה והמחשה לשירותי אספקה">
+          <figure class="image-frame">
+            <img src="assets/hamra-stock.jpg" alt="ערימות חמרה ושקי חומר באתר אספקה" />
+          </figure>
+        </aside>
+      </div>
+
+      <div class="container stats" aria-label="מידע תמציתי על תחומי השירות">
+        <div class="card">
+          <div class="stat-value">אספקת חומרי תשתית</div>
+          <div class="stat-label">חמרה, חול מחצבה, סומסום, חלוקי נחל, חיפוי ומילוי</div>
+        </div>
+        <div class="card">
+          <div class="stat-value">עבודות והפעלת ציוד</div>
+          <div class="stat-label">פיזור חומר, טרקטור כף, מחפרון ועבודות משלימות בשטח</div>
+        </div>
+        <div class="card">
+          <div class="stat-value">הובלה בכמה היקפים</div>
+          <div class="stat-label">מהזמנות ממוקדות ועד הובלות פול טריילר בכמויות גדולות</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials" class="band">
+      <div class="container">
+        <div class="section-head">
+          <h2>חומרים שמתאימים לפיתוח, גינון, תשתית וחיפוי</h2>
+          <p>חברה בתחום הזה צריכה להבין שלא כל חומר נבחר רק לפי שם המוצר. הבחירה הנכונה תלויה בשימוש, בכמות, בצורת הפיזור, בנגישות לשטח ובמראה הסופי המבוקש. לכן בדף הזה הדגש הוא לא רק על מה מספקים, אלא גם על החשיבה שמאחורי ההתאמה בין החומר לבין העבודה עצמה.</p>
+        </div>
+
+        <div class="materials-grid">
+          <article class="service-card">
+            <h3>חמרה, חול חמרה ואדמה גננית</h3>
+            <p>החמרה היא אחד החומרים המרכזיים בפרויקטים של גינון, מילוי ופיתוח סביבתי. היא מתאימה לעבודות שבהן יש צורך בחומר איכותי לשטחי שתילה, להכנת גינות, למילוי מפלסים וליצירת בסיס נכון לפני שלבי המשך. כאשר נדרשת חמרה בכמויות שונות, חשוב לעבוד עם גורם שיכול לספק גם חומר מתאים וגם שיטת הובלה שמתאימה בדיוק לתנאי העבודה.</p>
+            <p>אריאל לוי מספק חמרה לקבלנים, גננים ולקוחות פרטיים, עם אפשרות להזמנת חומר בהתאם לגודל הפרויקט. לצד החמרה קיימת גם אספקה של חול חמרה ואדמה גננית, כך שניתן לבנות פתרון שמתאים הן לשלב הפיתוח והן לשלב הגינון בפועל.</p>
+            <p><a href="https://ariel-levi.co.il/%D7%97%D7%9E%D7%A8%D7%94/" title="למידע נוסף על חמרה באתר אריאל לוי">למידע נוסף על חמרה</a></p>
+          </article>
+
+          <article class="service-card">
+            <h3>חול מחצבה, סומסום, חלוקי נחל ואבני חיפוי</h3>
+            <p>בפרויקטים של ריצוף, הכנת תשתית, דשא סינטטי, שבילים, גינות נוי ופיתוח חוץ, הבחירה בחומר המחצבה הנכון משפיעה על העמידות, על הנראות ועל קלות העבודה. חול מחצבה יכול לשמש כתשתית חשובה, סומסום מתאים לעבודות ריצוף ושבילים, חלוקי נחל מספקים פתרון חיפוי נקי ואסתטי, ואבני חיפוי נוספות משלימות את המראה והפונקציונליות של השטח.</p>
+            <p>היתרון המשמעותי הוא האפשרות להזמין לא רק חומר אחד, אלא לשלב כמה סוגי חומרים בתוך מהלך עבודה אחד. כך אפשר לקדם פרויקט באופן יעיל יותר, בלי להאריך את לוחות הזמנים ובלי לייצר פערים מיותרים בין שלב האספקה לשלב הביצוע.</p>
+          </article>
+        </div>
+
+        <div class="cards-3" style="margin-top:18px;">
+          <article class="service-card">
+            <h3>חומרים לגינות פרטיות</h3>
+            <p>גם בגינה ביתית יש משמעות גדולה לסוג החומר שמכניסים לשטח. החל מחמרה ואדמה גננית, דרך חול מחצבה ועד חלוקי נחל לחיפוי, הבחירה הנכונה יוצרת בסיס מסודר, נראות טובה יותר ותוצאה שמחזיקה לאורך זמן.</p>
+          </article>
+          <article class="service-card">
+            <h3>חומרים לקבלני פיתוח</h3>
+            <p>בשטחים ציבוריים, בפיתוח סביבתי, בשבילים, במילויים ובשלבי תשתית, יש צורך בזמינות, בכמויות מתאימות וביכולת תיאום מדויקת. כאן נכנסת החשיבות של ספק שמסוגל לחשוב גם על החומר וגם על מהירות ההעמסה וההובלה.</p>
+          </article>
+          <article class="service-card">
+            <h3>חומרים לגננים ובעלי מקצוע</h3>
+            <p>עבודות גינון רבות דורשות גמישות: לפעמים צריך רק בלה אחת, לפעמים כמה חומרים יחד, ולפעמים משאית מלאה. ההתאמה לגודל העבודה מאפשרת לשמור על סדר ועל יעילות בלי להזמין יותר מדי ובלי להיתקע עם פחות מדי.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <div class="section-head">
+          <h2>לא רק חומרים: גם עבודות שטח והובלות שמקדמות את הפרויקט</h2>
+          <p>בחלק גדול מהעבודות, אספקת החומר היא רק ההתחלה. מה שבאמת קובע את קצב ההתקדמות הוא היכולת לפרוק נכון, לפזר נכון ולהפעיל את הציוד המתאים במקום ובזמן הנכונים. לכן יש בדף הזה מקום מיוחד לשירותי העבודה וההובלה, שהם חלק מהותי מהפתרון שאריאל לוי מציע.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="service-card">
+            <h3>פיזור עם מיני מעמיס או טרקטור כף</h3>
+            <p>כאשר החומר מגיע לשטח, לעיתים אין די בפריקה בלבד. יש צורך בפיזור מדויק שיחסוך זמן עבודה נוסף ויכין את השטח לשלב הבא. שירותי פיזור עם מיני מעמיס או טרקטור כף מתאימים למילוי, יישור, סידור ערימות חומר והכנה מסודרת של השטח לעבודה.</p>
+            <ul>
+              <li>מתאים לעבודות גינון, תשתית ופיתוח.</li>
+              <li>מסייע לקצר זמני ביצוע ולשמור על סדר באתר.</li>
+              <li>נוח במיוחד כאשר יש צורך בשילוב בין אספקה לבין טיפול מידי בחומר.</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>שירותי טרקטור כף</h3>
+            <p>טרקטור כף הוא כלי עבודה חשוב בפרויקטים שבהם צריך להזיז חומר, לפנות, ליישר, להעמיס או לארגן את השטח בצורה מהירה ויעילה. זהו שירות רלוונטי הן לקבלנים והן ללקוחות פרטיים שזקוקים לפתרון ביצועי ולא רק להזמנת חומר בנפרד.</p>
+            <ul>
+              <li>העמסה, הזזה ופיזור חומרי מילוי ותשתית.</li>
+              <li>התאמה לעבודה בשטחי פיתוח, גינות ומתחמי חוץ.</li>
+              <li>חיבור טבעי לשירותי אספקת החומרים.</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>עבודות טרקטור מחפרון</h3>
+            <p>יש עבודות שבהן צריך יותר מגישה של אספקה ופיזור. כאשר השטח דורש חפירה, טיפול נקודתי, הכנה לתשתית או עבודה משולבת, מחפרון יכול לתת מענה נכון יותר. היתרון הוא היכולת לעבוד בצורה ממוקדת, במיוחד בפרויקטים שבהם יש צורך בתנועה, הכנה ועיצוב של השטח לפני המשך הביצוע.</p>
+            <ul>
+              <li>עבודות הכנה לפני גינון או פיתוח.</li>
+              <li>מתאים לשטחי חוץ, גינות ואתרי עבודה פעילים.</li>
+              <li>פתרון פרקטי שמרחיב את מעטפת השירות.</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>הובלות פול טריילר</h3>
+            <p>כאשר מדובר בכמויות גדולות, צריך הובלה שמתאימה להיקף העבודה. הובלות פול טריילר הן פתרון נכון לקבלנים, לפרויקטים גדולים ולעבודות שבהן נדרשת אספקה משמעותית של חמרה, חול מחצבה, סומסום, חומרי מילוי וחיפוי. היכולת לעבוד בהיקפים גדולים יוצרת יתרון תפעולי ממשי ומאפשרת להתקדם מהר יותר מול דרישות השטח.</p>
+            <ul>
+              <li>מתאים להזמנות בכמויות גדולות.</li>
+              <li>יעיל לפרויקטים מתמשכים ולשלבי מילוי ופיתוח.</li>
+              <li>חוסך פיצול מיותר בין כמה משלוחים נפרדים.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container gallery-grid">
+        <article class="gallery-card">
+          <h3>לוגיסטיקה טובה מתחילה בהתאמה נכונה</h3>
+          <p>לא כל לקוח צריך אותו דבר. יש מי שמחפש בלה או כמה שקים לפרויקט ביתי, יש מי שצריך משאית מסודרת עם חומר אחד מדויק, ויש מי שמנהל אתר עבודה פעיל שבו כמה חומרים שונים צריכים להגיע בצורה מתוזמנת. לכן הערך כאן אינו רק במכירת חומר, אלא ביכולת להבין מה באמת נדרש ולהציע דרך אספקה ועבודה שמתאימה למציאות בשטח.</p>
+          <p>כשאותו גורם מספק את החומר, מתאם את ההובלה ויכול גם להוסיף עבודות משלימות, קל יותר לשמור על רצף עבודה. זו גישה שנכונה במיוחד בתחומי פיתוח החוץ, התשתיות והגינון, שבהם הדיוק בתזמון ובתפעול משמעותי לא פחות מאיכות החומר עצמו.</p>
+          <ul>
+            <li>תיאום נוח יותר בין סוג החומר לאופן ההובלה.</li>
+            <li>יכולת להתאים פתרון לפרויקט קטן או רחב היקף.</li>
+            <li>מענה שמפחית פערים בין הזמנה, אספקה וביצוע.</li>
+          </ul>
+        </article>
+
+        <figure class="gallery-card image-frame" style="padding:0;">
+          <img src="assets/backhoe-loading.jpg" alt="טרקטור כף מרים שק חומר באתר עבודה" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="audiences" class="band">
+      <div class="container">
+        <div class="section-head">
+          <h2>למי השירות מתאים</h2>
+          <p>אריאל לוי פועל מול כמה קהלי יעד, וכל אחד מהם מקבל ערך מעט שונה. קבלנים מחפשים רצף עבודה, גננים מחפשים התאמה וגמישות, ולקוחות פרטיים רוצים פתרון ברור ואמין בלי להסתבך. המבנה של השירות יודע לתת מענה לשלושתם.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="service-card">
+            <h3>לקבלנים</h3>
+            <p>אספקת חומרי מילוי, תשתית וחיפוי בכמויות מתאימות, עם אפשרות להזמנת הובלה בהיקפים גדולים ושילוב עבודות ציוד בשטח. מתאים לפרויקטים שבהם חשוב לעבוד מדויק ולשמור על התקדמות רציפה.</p>
+          </article>
+          <article class="service-card">
+            <h3>לגננים ואנשי פיתוח סביבתי</h3>
+            <p>שילוב בין חמרה, אדמה גננית, חול מחצבה, חלוקי נחל וחומרי חיפוי נוספים, בהתאם לצרכי הפרויקט. היתרון כאן הוא היכולת לבנות סל חומרים נכון ולא להזמין כל פריט בנפרד ממקור אחר.</p>
+          </article>
+          <article class="service-card">
+            <h3>ללקוחות פרטיים</h3>
+            <p>גם מי שמטפח גינה פרטית או מבצע פיתוח חוץ בבית יכול ליהנות מאספקה מסודרת, ייעוץ לפי שימוש ופתרונות הובלה שמתאימים להיקף העבודה. כך התהליך פשוט יותר, נגיש יותר ונכון יותר לביצוע.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container content-split">
+        <article class="service-card">
+          <h2>על אריאל לוי</h2>
+          <p>אריאל לוי פועל בתחום אספקת החומרים, ההובלות והעבודות מתוך היכרות קרובה עם צרכי השטח. זהו תחום שבו לא מספיק לדעת מה שמו של החומר. צריך להבין מה נדרש לפרויקט, איך נכון להביא אותו, באיזה היקף כדאי להזמין, ואילו שירותים משלימים יכולים לחסוך זמן, מאמץ ועלויות תפעול.</p>
+          <p>לכן המעטפת שנבנתה כאן היא מעטפת שמדברת בשפה של ביצוע: חמרה וחומרי מחצבה מצד אחד, ושירותי הובלה ועבודות מהצד השני. השילוב הזה מייצר יתרון ברור, משום שהוא מאפשר ללקוח לקבל תמונה רחבה יותר ולא רק הזמנת חומר נקודתית.</p>
+          <p>הדגש הוא על שירות שמתאים לחברה מהסוג הזה: קלאסי, מקצועי, ברור ומכוון לשטח. בלי עודף רעש ובלי הבטחות מיותרות, אלא עם מענה שמבוסס על התאמה בין מה שהעבודה דורשת לבין מה שנכון לספק בפועל.</p>
+        </article>
+
+        <figure class="service-card image-frame" style="padding:0; min-height:100%;">
+          <img src="assets/pol-trailer.jpg" alt="משאית פול טריילר של אריאל לוי להובלת חומרי תשתית" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>צריכים חמרה, חומרי תשתית או הובלה לפרויקט?</h2>
+            <p>בין אם מדובר בהזמנה לפרויקט קבלני, בעבודת גינון, בפיתוח חוץ או בצורך נקודתי לבית פרטי, אפשר לפנות ולקבל מענה שמתחשב בסוג החומר, בכמות, בדרך ההובלה ובשירותי העבודה שיכולים להשלים את המשימה.</p>
+            <p>כאשר עובדים מול גורם שיודע לחבר בין אספקת חומר, הובלה וביצוע, הרבה יותר קל לקדם את העבודה בצורה מסודרת. זה בדיוק המקום שבו אריאל לוי בולט: לא רק במכירת חומר, אלא במתן פתרון שמתאים לתכלית האמיתית של העבודה.</p>
+          </div>
+          <div class="cta-box">
+            <p><strong>טלפון ישיר:</strong><br><a href="tel:0535359575" title="חיוג ישיר לאריאל לוי">053-535-9575</a></p>
+            <p><strong>קישור מהיר:</strong><br><a href="https://ariel-levi.co.il/%D7%97%D7%9E%D7%A8%D7%94/" title="מעבר לעמוד חמרה של אריאל לוי">עמוד חמרה באתר</a></p>
+            <p class="muted">שירותים רלוונטיים: חמרה, חול מחצבה, חלוקי נחל, אבני סומסום, פיזור חומר, טרקטור כף, מחפרון והובלות פול טריילר.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-panel">
+      <div class="footer-top">
+        <div>
+          <h3 style="margin-bottom:10px;">אריאל לוי – אספקת חומרים והובלות</h3>
+          <p class="footer-note">אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר. ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה (כגון cookies) לצורך שיפור חוויית המשתמש.</p>
+          <p class="footer-note">האתר מאוחסן ומופעל באמצעות פלטפורמת github, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה. ניתן לעיין במדיניות הפרטיות של github בקישור הבא. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מעבר למדיניות הפרטיות של GitHub">מדיניות הפרטיות של GitHub</a></p>
+        </div>
+        <div>
+          <a class="phone-pill" href="tel:0535359575" title="חיוג לאריאל לוי מהפוטר">053-535-9575</a>
+        </div>
+      </div>
+
+      <div class="footer-links" aria-label="קישורים מרכזיים בפוטר">
+        <a href="#top" title="חזרה לראש הדף">ראש הדף</a>
+        <a href="#materials" title="מעבר לחלק החומרים בפוטר">חומרים</a>
+        <a href="#works" title="מעבר לחלק העבודות וההובלות בפוטר">עבודות והובלות</a>
+        <a href="#contact" title="מעבר לחלק יצירת הקשר בפוטר">יצירת קשר</a>
+        <a href="https://ariel-levi.co.il/" title="מעבר לאתר הראשי של אריאל לוי">לאתר הראשי</a>
+      </div>
+
+      <p class="access-note">נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, TITLE לקישורים, גודל טקסט מינימלי של 18px וניגודיות משופרת.</p>
+      <div class="fine-links">
+        <a title="נבנה על ידי פרוסייטס" href="https://prosites.co.il/">נבנה על ידי פרוסייטס</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navWrap = document.querySelector('.nav-wrap');
+    const navLinks = document.querySelectorAll('.main-nav a, .footer-links a');
+
+    if (toggle && navWrap) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navWrap.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'סגור תפריט ניווט' : 'פתח תפריט ניווט');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 820) {
+            navWrap.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'פתח תפריט ניווט');
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
